@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  timepeek
+*/
+
+// General
+"TimePeek" = "TimePeek";
+"Timestamp:" = "Carimbo de data/hora:";
+"Copy" = "Copiar";
+" (ms)" = " (ms)";
+"UTC" = "UTC";
+"Local (" = "Local (";
+
+// Settings - Headers
+"Real-time Preview" = "Pré-visualização em tempo real";
+"Display Preferences" = "Preferências de exibição";
+"Bubble Settings" = "Configurações de bolha";
+"Timezone Management" = "Gerenciamento de fuso horário";
+"Behavior Control" = "Controle de comportamento";
+"Language" = "Idioma";
+
+// Settings - Labels
+"Current Timestamp:" = "Carimbo de data/hora atual:";
+"Date Format:" = "Formato de data:";
+"Auto-Hide:" = "Ocultar automaticamente:";
+"Favorite Timezone:" = "Fuso horário favorito:";
+"Current:" = "Atual:";
+"Suggestions:" = "Sugestões:";
+
+// Settings - Controls
+"Show Milliseconds" = "Mostrar milissegundos";
+"Smart Detect (Monitor Clipboard)" = "Detecção inteligente (Monitorar área de transferência)";
+"Search or type timezone..." = "Pesquisar ou digitar fuso horário...";
+"Clear" = "Limpar";
+"None" = "Nenhum";
+"Remove" = "Remover";
+
+// Settings - Options
+"10 seconds" = "10 segundos";
+"20 seconds" = "20 segundos";
+"30 seconds" = "30 segundos";
+"40 seconds" = "40 segundos";
+"50 seconds" = "50 segundos";
+"60 seconds" = "60 segundos";
+"Never Auto-Hide" = "Nunca ocultar automaticamente";
+
+// Settings - Language
+"System Default" = "Padrão do sistema";
+"English" = "English";
+"Simplified Chinese" = "简体中文";
+"Japanese" = "日本語";
+"Portuguese" = "Português";

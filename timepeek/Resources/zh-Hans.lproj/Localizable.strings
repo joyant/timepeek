@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  timepeek
+*/
+
+// General
+"TimePeek" = "TimePeek";
+"Timestamp:" = "时间戳:";
+"Copy" = "复制";
+" (ms)" = " (毫秒)";
+"UTC" = "UTC";
+"Local (" = "本地 (";
+
+// Settings - Headers
+"Real-time Preview" = "实时预览";
+"Display Preferences" = "显示偏好";
+"Bubble Settings" = "气泡设置";
+"Timezone Management" = "时区管理";
+"Behavior Control" = "行为控制";
+"Language" = "语言设置";
+
+// Settings - Labels
+"Current Timestamp:" = "当前时间戳:";
+"Date Format:" = "日期格式:";
+"Auto-Hide:" = "自动隐藏:";
+"Favorite Timezone:" = "常用时区:";
+"Current:" = "当前:";
+"Suggestions:" = "建议:";
+
+// Settings - Controls
+"Show Milliseconds" = "显示毫秒";
+"Smart Detect (Monitor Clipboard)" = "智能检测 (监听剪贴板)";
+"Search or type timezone..." = "搜索或输入时区...";
+"Clear" = "清空";
+"None" = "无";
+"Remove" = "移除";
+
+// Settings - Options
+"10 seconds" = "10 秒";
+"20 seconds" = "20 秒";
+"30 seconds" = "30 秒";
+"40 seconds" = "40 秒";
+"50 seconds" = "50 秒";
+"60 seconds" = "60 秒";
+"Never Auto-Hide" = "永不自动隐藏";
+
+// Settings - Language
+"System Default" = "系统默认";
+"English" = "English";
+"Simplified Chinese" = "简体中文";
+"Japanese" = "日本語";
+"Portuguese" = "Português";

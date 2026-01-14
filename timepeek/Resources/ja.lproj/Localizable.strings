@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  timepeek
+*/
+
+// General
+"TimePeek" = "TimePeek";
+"Timestamp:" = "タイムスタンプ:";
+"Copy" = "コピー";
+" (ms)" = " (ミリ秒)";
+"UTC" = "UTC";
+"Local (" = "ローカル (";
+
+// Settings - Headers
+"Real-time Preview" = "リアルタイムプレビュー";
+"Display Preferences" = "表示設定";
+"Bubble Settings" = "バブル設定";
+"Timezone Management" = "タイムゾーン管理";
+"Behavior Control" = "動作設定";
+"Language" = "言語設定";
+
+// Settings - Labels
+"Current Timestamp:" = "現在のタイムスタンプ:";
+"Date Format:" = "日付形式:";
+"Auto-Hide:" = "自動非表示:";
+"Favorite Timezone:" = "お気に入りタイムゾーン:";
+"Current:" = "現在:";
+"Suggestions:" = "提案:";
+
+// Settings - Controls
+"Show Milliseconds" = "ミリ秒を表示";
+"Smart Detect (Monitor Clipboard)" = "スマート検出 (クリップボード監視)";
+"Search or type timezone..." = "タイムゾーンを検索または入力...";
+"Clear" = "クリア";
+"None" = "なし";
+"Remove" = "削除";
+
+// Settings - Options
+"10 seconds" = "10 秒";
+"20 seconds" = "20 秒";
+"30 seconds" = "30 秒";
+"40 seconds" = "40 秒";
+"50 seconds" = "50 秒";
+"60 seconds" = "60 秒";
+"Never Auto-Hide" = "自動非表示にしない";
+
+// Settings - Language
+"System Default" = "システムデフォルト";
+"English" = "English";
+"Simplified Chinese" = "简体中文";
+"Japanese" = "日本語";
+"Portuguese" = "Português";

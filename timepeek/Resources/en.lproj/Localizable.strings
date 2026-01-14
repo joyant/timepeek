@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  timepeek
+*/
+
+// General
+"TimePeek" = "TimePeek";
+"Timestamp:" = "Timestamp:";
+"Copy" = "Copy";
+" (ms)" = " (ms)";
+"UTC" = "UTC";
+"Local (" = "Local (";
+
+// Settings - Headers
+"Real-time Preview" = "Real-time Preview";
+"Display Preferences" = "Display Preferences";
+"Bubble Settings" = "Bubble Settings";
+"Timezone Management" = "Timezone Management";
+"Behavior Control" = "Behavior Control";
+"Language" = "Language";
+
+// Settings - Labels
+"Current Timestamp:" = "Current Timestamp:";
+"Date Format:" = "Date Format:";
+"Auto-Hide:" = "Auto-Hide:";
+"Favorite Timezone:" = "Favorite Timezone:";
+"Current:" = "Current:";
+"Suggestions:" = "Suggestions:";
+
+// Settings - Controls
+"Show Milliseconds" = "Show Milliseconds";
+"Smart Detect (Monitor Clipboard)" = "Smart Detect (Monitor Clipboard)";
+"Search or type timezone..." = "Search or type timezone...";
+"Clear" = "Clear";
+"None" = "None";
+"Remove" = "Remove";
+
+// Settings - Options
+"10 seconds" = "10 seconds";
+"20 seconds" = "20 seconds";
+"30 seconds" = "30 seconds";
+"40 seconds" = "40 seconds";
+"50 seconds" = "50 seconds";
+"60 seconds" = "60 seconds";
+"Never Auto-Hide" = "Never Auto-Hide";
+
+// Settings - Language
+"System Default" = "System Default";
+"English" = "English";
+"Simplified Chinese" = "简体中文";
+"Japanese" = "日本語";
+"Portuguese" = "Português";
