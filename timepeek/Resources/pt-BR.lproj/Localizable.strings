@@ -50,3 +50,7 @@
 "Simplified Chinese" = "简体中文";
 "Japanese" = "日本語";
 "Portuguese" = "Português";
+
+// Settings - Footer
+"Quit" = "Sair";
+"Quit TimePeek" = "Sair do TimePeek";

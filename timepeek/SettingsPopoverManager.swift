@@ -4,8 +4,11 @@ import SwiftUI
 class SettingsPopoverManager: NSObject, NSPopoverDelegate {
     static let shared = SettingsPopoverManager()
     
+    // 将 popover 声明为 lazy var 或在 toggle 中确保每次都检查
+    // 这里保持强引用，避免被意外释放
     private var popover: NSPopover?
     private var statusItemButton: NSStatusBarButton?
+    private var eventMonitor: Any? // 添加事件监听器
     
     private override init() {
         super.init()
@@ -33,16 +36,15 @@ class SettingsPopoverManager: NSObject, NSPopoverDelegate {
     
     private func setupPopover() {
         let popover = NSPopover()
-        popover.behavior = .transient // 点击外部自动关闭
-        popover.animates = true
-        popover.contentSize = NSSize(width: 480, height: 360) // 初始尺寸，会被 SettingsView 撑开或限制
+        popover.behavior = .transient
+        popover.animates = false
+        popover.contentSize = NSSize(width: 480, height: 360)
         
         // 创建 SwiftUI 视图
-        let settingsView = SettingsView(settings: AppSettings.shared)
+        let settingsView = SettingsView()
         
         // 使用 NSHostingController 承载
         let hostingController = NSHostingController(rootView: settingsView)
-        // 确保视图背景透明，利用 Popover 的材质
         hostingController.view.layer?.backgroundColor = NSColor.clear.cgColor
         
         popover.contentViewController = hostingController
@@ -52,14 +54,30 @@ class SettingsPopoverManager: NSObject, NSPopoverDelegate {
     }
     
     private func show(relativeTo button: NSStatusBarButton) {
-        // 强制激活应用，确保 Popover 能获取焦点
+        // 强制激活应用
         NSApp.activate(ignoringOtherApps: true)
         
-        popover?.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
+        let adjustedRect = NSRect(x: button.bounds.minX, y: button.bounds.maxY + 10, width: button.bounds.width, height: 0)
+        popover?.show(relativeTo: adjustedRect, of: button, preferredEdge: .minY)
+        
+        // 添加全局点击监听，辅助关闭 (双重保障)
+        if eventMonitor == nil {
+            eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
+                if let strongSelf = self, let popover = strongSelf.popover, popover.isShown {
+                    strongSelf.close()
+                }
+            }
+        }
     }
     
     func close() {
-        popover?.performClose(nil)
+        popover?.close() // 直接使用 close() 而不是 performClose()，更强制
+        
+        // 移除监听器
+        if let monitor = eventMonitor {
+            NSEvent.removeMonitor(monitor)
+            eventMonitor = nil
+        }
     }
     
     // MARK: - NSPopoverDelegate
